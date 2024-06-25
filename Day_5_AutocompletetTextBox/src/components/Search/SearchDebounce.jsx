@@ -35,11 +35,11 @@ export const SearchDebounce = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      searchInputvalue && fetchMovieList();
-    }, 3000);
+      searchInputvalue ? fetchMovieList():setsearchList([]);
+    }, 1000);
     console.log("typeMount");
     return () => {
-    //  clearTimeout(timeout);
+    clearTimeout(timeout);
       console.log("typeUnmount");
     };
   }, [searchInputvalue]);
