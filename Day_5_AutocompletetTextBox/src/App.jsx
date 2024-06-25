@@ -2,6 +2,7 @@ import { Search } from "./components/Search/Search";
 import { SearchApi } from "./components/Search/SearchApi";
 import { SearchApiUseEffect } from "./components/Search/SearchApiUseEffect";
 import { SearchDebounce } from "./components/Search/SearchDebounce";
+import SearchThrottle from "./components/Search/SearchThrottle";
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
 <td> <SearchApiUseEffect /></td><td> <SearchDebounce /></td>
 
 </tr>
+<tr>
+<td> <SearchThrottle /></td><td> </td>
 
+</tr>
     </table>
     
     </>
