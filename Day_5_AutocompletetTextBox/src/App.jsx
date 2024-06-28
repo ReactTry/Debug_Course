@@ -6,21 +6,36 @@ import SearchThrottle from "./components/Search/SearchThrottle";
 
 function App() {
   return (
-    <><table>
-<tr>
-<td>  <Search /></td><td>  <SearchApi /></td>
-
-</tr>
-<tr>
-<td> <SearchApiUseEffect /></td><td> <SearchDebounce /></td>
-
-</tr>
-<tr>
-<td> <SearchThrottle /></td><td> </td>
-
-</tr>
-    </table>
-    
+    <>
+      <table>
+        <tr>
+          <td>
+            {" "}
+            <Search />
+          </td>
+          <td>
+            {" "}
+            <SearchApi />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {" "}
+            <SearchApiUseEffect />
+          </td>
+          <td>
+            {" "}
+            <SearchDebounce />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            {" "}
+            <SearchThrottle />
+          </td>
+          <td> </td>
+        </tr>
+      </table>
     </>
   );
 }
